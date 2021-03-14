@@ -5,52 +5,212 @@
   --secondary-text-color: #757575;
   --white-text-color: #FFFFFF;
   --akcent-color: #2196F3;
+  --main-font: Roboto, sans-serif;
+  --minor-font: Raleway, sans-serif;
+  --spacing: 0.03em;
+ 
+
 }
-body {
+.page-body {
   background-color: var(--main-background-color);
   color: var(--main-text-color);
+  font-family: var(--main-font);
+  letter-spacing: var(--spacing);
+  
 }
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.webstudio {
+  font-family: var(--minor-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: var(--spacing);
+}
+
+.web {
+  color: #2196F3;
+
+}
+
+.studio {
+  color: #000000;
+}
+
+
+.list {
+  list-style: none;
+}
+
+.nav-list {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-social-link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.nav-link:hover,.nav-link:focus {
+  color: #188ce8;
+}
+
 .hero {
-  background-color:#2F303A;
-  color:var(--white-text-color);
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  background-color:#2F303A;
+  color:var(--white-text-color);
+ 
 }
-.button {
-  background-color: var(--button-bg-color);  
-  color: var(--white-text-color);
-  font-family: Roboto;
-  font-weight: bold;
+
+.hero-button {
+  font-family: var(--main-font);
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background-color: var(--button-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
 }
 
+.hero-button:hover,.hero-button:focus {
+  background-color: #188ce8;
+}
+
+.button-portfolio {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: var(--spacing);
+  color: var(--main-text-color);
+  background: #F5F4FA;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--button-bg-color);
+  color: var(--white-text-color);
+
+}
+
+footer {
+  background-color: #2F303A;
+}
+.footer-studio {
+  color: #FFFFFF;
+}
+
+.footer-list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: var(--spacing);
+  color: #FFFFFF;
+}
+
+.social-list {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.title {
+  font-family: var(--main-font)
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: var(--spacing);
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.text {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: var(--spacing);
+  color: #757575;
+
+}
+
+.specialist-name {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: var(--spacing);
+  color: var(--main-text-color);
+}
+
+.profession {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: var(--spacing)
+  color: #757575;
+}
+
+.name-project {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.worktype {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88x;
+  letter-spacing: var(--spacing);
+  color: #757575;
+
+}
+
+
 /* ctrl+/ - коминтарий */
-/* цвет основного тексат #212121; */
-/*цвет вторичного текста #757575;*/
 /*цвет текста Webstudio: Web - #2196F3;   Studio - #000000;/
-/*цвет акцент #2196F3;*/
-/* белый цвет на темном фоне #FFFFFF;*/
 /* цвет текста в футоре ссылок на имейл и тел. rgb(255,255,255,0,6); */
-
-/* цвет фона #FFFFFF; */
-/* цвет фона героя #2F303A; */
-/* цвет фона секции первой и второй #E5E5E5; */
-!
-/* цвет фона секции "Наша команда" #F5F4FA; */
-/* правила для шрифта
-font-family: 'Oleo Script', cursive;
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
 /* font-family: inherit */
