@@ -1,6 +1,5 @@
 :root{
   --main-background-color: #ffffff;
-  --button-bg-color: #2196F3;
   --main-text-color: #212121;
   --secondary-text-color: #757575;
   --white-text-color: #FFFFFF;
@@ -16,7 +15,6 @@
   color: var(--main-text-color);
   font-family: var(--main-font);
   letter-spacing: var(--spacing);
-  
 }
 
 .link {
@@ -33,34 +31,31 @@
 }
 
 .web {
-  color: #2196F3;
-
+  color: var(--akcent-color);
 }
 
 .studio {
   color: #000000;
 }
 
-
 .list {
   list-style: none;
 }
 
 .nav-list {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .nav-social-link {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .nav-link:hover,.nav-link:focus {
@@ -68,7 +63,7 @@
 }
 
 .hero {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -76,12 +71,11 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   background-color:#2F303A;
-  color:var(--white-text-color);
- 
+  color:var(--white-text-color); 
 }
 
 .hero-button {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -90,11 +84,10 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
-  background-color: var(--button-bg-color);
+  background-color: var(--akcent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-
 }
 
 .hero-button:hover,.hero-button:focus {
@@ -102,7 +95,7 @@
 }
 
 .button-portfolio {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -116,20 +109,20 @@
 
 .button-portfolio:hover,
 .button-portfolio:focus {
-  background-color: var(--button-bg-color);
+  background-color: var(--akcent-color);
   color: var(--white-text-color);
-
 }
 
 footer {
   background-color: #2F303A;
 }
+
 .footer-studio {
-  color: #FFFFFF;
+  color: var(--white-text-color);
 }
 
 .footer-list {
-  font-family: Roboto;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -143,7 +136,7 @@ footer {
 }
 
 .title {
-  font-family: var(--main-font)
+  font-family: inherit;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -151,7 +144,7 @@ footer {
 }
 
 .subtitle {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -161,17 +154,16 @@ footer {
 }
 
 .text {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: var(--spacing);
-  color: #757575;
-
+  color: var(--secondary-text-color);
 }
 
 .specialist-name {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -181,17 +173,17 @@ footer {
 }
 
 .profession {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: var(--spacing)
-  color: #757575;
+  color: var(var(--secondary-text-color);
 }
 
 .name-project {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -200,17 +192,21 @@ footer {
 }
 
 .worktype {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88x;
   letter-spacing: var(--spacing);
-  color: #757575;
-
+  color: var(--secondary-text-color);
 }
 
-
-/* ctrl+/ - коминтарий */
-/*цвет текста Webstudio: Web - #2196F3;   Studio - #000000;/
-/* цвет текста в футоре ссылок на имейл и тел. rgb(255,255,255,0,6); */
-/* font-family: inherit */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
