@@ -62,18 +62,25 @@
   color: #188ce8;
 }
 
+.current {
+  color: var(--akcent-color);
+}
+
 .hero {
+  background-color:#2F303A;
+}
+
+.hero-title {
   font-family: inherit;
+  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color:#2F303A;
-  color:var(--white-text-color); 
+  color: var(--white-text-color);
 }
-
 .hero-button {
   font-family: inherit;
   font-weight: 700;
@@ -114,7 +121,17 @@
   color: var(--white-text-color);
 }
 
-footer {
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+} 
+.basement {
   background-color: #2F303A;
 }
 
@@ -173,16 +190,6 @@ footer {
   color: var(--main-text-color);
 }
 
-.profession {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: var(--spacing)
-  color: var(var(--secondary-text-color);
-}
-
 .name-project {
   font-family: inherit;
   font-weight: 700;
@@ -201,13 +208,18 @@ footer {
   color: var(--secondary-text-color);
 }
 
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+.profession {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: var(--spacing)
+  color: var(var(--secondary-text-color);
 }
+
+
+
+
+
+
