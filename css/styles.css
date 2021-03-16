@@ -42,11 +42,12 @@
   list-style: none;
 }
 
-.nav-list {
+.nav,.nav-list {
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .nav-social-link {
